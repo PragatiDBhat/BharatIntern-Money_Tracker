@@ -1,0 +1,143 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #c4a3ff, #7f78d2); /* Shades of purple */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 30px 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+    animation: fadeInUp 0.5s ease; /* Fade in animation */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    animation: fadeInLeft 0.5s ease; /* Fade in from left animation */
+}
+
+label {
+    display: inline-block;
+    width: 20%;
+    text-align: left;
+    margin-right: 10px;
+    margin-left: 15px;
+    color: #000; /* Black font color */
+}
+
+input,select {
+    width: 65%;
+    padding: 10px;
+    border: 1px solid #000; /* Black border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+input:focus {
+    border-color: #000; /* Black border on focus */
+}
+
+button {
+    width: 20%;
+    padding: 10px 20px;
+    background: #af8afa; /* Light purple */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s; /* Smooth background color transition */
+    animation: fadeInRight 0.5s ease; /* Fade in from right animation */
+}
+
+button:hover {
+    background: #6c5fc7; /* Darker purple on hover */
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #000; /* Black border */
+}
+
+thead {
+    background: #af8afa; /* Light purple */
+    color: #fff;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #000; /* Black border */
+    transition: background 0.3s; /* Smooth background color transition */
+}
+
+th:hover,
+td:hover {
+    background: #6c5fc7; /* Darker purple on hover */
+}
+
+tr:nth-child(even) {
+    background: #f7f7f7;
+    transition: background 0.3s; /* Smooth background color transition */
+}
+
+.delete-btn {
+    padding: 10px 20px;
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    width: 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s; /* Smooth background color transition */
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
